@@ -13,9 +13,10 @@ import SwiftUI
 
 public struct Demo {
     public static func getName() -> String {
-        Faker().name.name()
-        //"\"\(StringStyle().attributes.description)\""//#""Hello""#
+        Faker().name.name() // It is not working ❌
+        //"\"\(StringStyle().attributes.description)\"" // It works ✅
+        //#""Hello""# // It works ✅
         
-        //"#FFFFFF".argb2rgba!
+        //"#FFFFFF".argb2rgba! // It is not working ❌
     }
 }
